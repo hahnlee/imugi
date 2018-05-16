@@ -13,6 +13,7 @@ from typing import (
 
 from imugi.ast import (
     ASTNode,
+    FunctionAST,
     PrototypeAST,
 )
 
@@ -51,16 +52,19 @@ class Parser(object):
             raise Exception('class is not support yet')
         raise SyntaxError(f'Expected: def or class, get: {token_val}')
 
-    def parse_def(self) -> PrototypeAST:
+    def parse_def(self) -> FunctionAST:
         """parse function for when def
 
+        Returns:
+            FunctionAST: Function AST
+
         Todo:
-            * parse body and return FunctionAST
+            * parse body
 
         """
         self.next_token()
         proto_ast = self.parse_proto()
-        return proto_ast
+        return FunctionAST(proto_ast)
 
     def parse_proto(self) -> PrototypeAST:
         """parse function prototype

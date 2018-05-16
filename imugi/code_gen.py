@@ -8,6 +8,7 @@ from llvmlite import (
 
 from imugi.ast import (
     ASTNode,
+    FunctionAST,
     PrototypeAST,
 )
 
@@ -64,19 +65,19 @@ class CodeGen(object):
         func = ir.Function(self.module, func_type, func_name)
         return func
 
-    def gen_func_type(self, node):
+    def gen_func_type(self, node: FunctionAST) -> ir.Function:
         """IR Generator for FunctionAST
 
         Args:
-            node (PrototypeAST): Function prototype ast
+            node (FunctionAST): Function prototype ast
 
         Returns:
             ir.Function: Function LLVM IR code
 
         Todo:
-            * Change args type to FunctionAST
             * Support entry block
+            * Generate IR code for function body
 
         """
-        func: ir.Function = self.gen_proto_type(node)
+        func: ir.Function = self.gen_proto_type(node.proto)
         return func
