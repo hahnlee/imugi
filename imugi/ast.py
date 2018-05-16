@@ -4,8 +4,15 @@ from typing import (
 )
 
 
-class ASTNode:
+class ASTNode(object):
     def __init__(self, name: str, kind: str, value: Union[str, None]=None):
+        """Node for AST
+
+        Args:
+            name (str): Node name eg. variable name
+            kind (str): Node type eg. int, str
+            value (str, optional): eg. variable value
+        """
         self.name = name
         self.kind = kind
         self.value = value
@@ -14,8 +21,15 @@ class ASTNode:
         return f'ASTNode({self.name}, {self.kind}, {self.value})'
 
 
-class PrototypeAST:
+class PrototypeAST(object):
     def __init__(self, name: str, args: List[ASTNode], ret: str):
+        """Function prototype AST
+
+        Args:
+            name (str): Function name
+            args (list): List of ASTNode that function arguments information
+            ret (str): Function return type
+        """
         self.name = name
         self.args = args
         self.ret = ret

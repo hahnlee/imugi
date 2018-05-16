@@ -30,4 +30,4 @@ class TestParser(unittest.TestCase):
     def test_empty_args_include_comma_function(self):
         source_code = 'def test(,) -> int:\n'
         parser = Parser(self.get_bytes(source_code).readline)
-        self.assertRaises(Exception, parser.parse)
+        self.assertRaises(SyntaxError, parser.parse)
