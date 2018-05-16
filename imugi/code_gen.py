@@ -17,7 +17,7 @@ class CodeGen:
 
     def get_type(self, kind: str):
         if kind == 'int':
-            return ir.IntType(bits=64)
+            return ir.IntType(bits=32)
         elif kind == 'float':
             return ir.FloatType()
         raise Exception(f'{kind} is not support yet')

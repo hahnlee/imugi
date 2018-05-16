@@ -25,7 +25,7 @@ PRIMITIVE_TYPE = [
 class Parser:
     def __init__(self, source):
         self.token_generator = tokenize(source)
-        self.cursor_token: (TokenInfo, None) = None
+        self.cursor_token: Union[TokenInfo, None] = None
 
     def parse(self):
         self.next_token()
