@@ -44,29 +44,8 @@ Temporary Items
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# User-specific stuff:
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/dictionaries
-
-# Sensitive or high-churn files:
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.xml
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-
-# Gradle:
-.idea/**/gradle.xml
-.idea/**/libraries
-
 # CMake
 cmake-build-debug/
-
-# Mongo Explorer plugin:
-.idea/**/mongoSettings.xml
 
 ## File-based project format:
 *.iws
@@ -76,14 +55,8 @@ cmake-build-debug/
 # IntelliJ
 /out/
 
-# mpeltonen/sbt-idea plugin
-.idea_modules/
-
 # JIRA plugin
 atlassian-ide-plugin.xml
-
-# Cursive Clojure plugin
-.idea/replstate.xml
 
 # Ruby plugin and RubyMine
 /.rakeTasks
@@ -99,11 +72,7 @@ fabric.properties
 
 # *.iml
 # modules.xml
-# .idea/misc.xml
 # *.ipr
-
-# Sonarlint plugin
-.idea/sonarlint
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -530,3 +499,6 @@ paket-files/
 ### VisualStudio Patch ###
 # By default, sensitive information, such as encrypted password
 # should be stored in the .pubxml.user file.
+
+### VisualStateCode
+.vscode/
