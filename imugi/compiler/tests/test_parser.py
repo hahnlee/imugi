@@ -3,7 +3,7 @@ from io import (
     BytesIO,
 )
 
-from imugi.parser import (
+from imugi.compiler.parser import (
     Parser,
 )
 
