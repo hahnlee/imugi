@@ -135,8 +135,7 @@ class Parser(object):
         if self.cursor_token is None:
             return None
 
-        token_kind, _, _, _, _ = self.cursor_token
-        return token_kind
+        return self.cursor_token.type
 
     def get_token_val(self) -> Union[str, None]:
         """Provide cursor token's token value
@@ -149,8 +148,7 @@ class Parser(object):
         if self.cursor_token is None:
             return None
 
-        _, token_val, _, _, _ = self.cursor_token
-        return token_val
+        return self.cursor_token.string
 
     def check(self, kind: int, value: str):
         """Check cursor token's kind and value with given arguments. if both are same then move cursor to next token

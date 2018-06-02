@@ -28,8 +28,7 @@ def main() -> int:
     parser = Parser(args.file.readline)
     ast = parser.parse()
     code_gen = CodeGen()
-    func = code_gen.gen_func_type(ast)
-    print(func)
+    _ = code_gen.gen_func_type(ast)
     return 0
 
 
