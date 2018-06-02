@@ -6,7 +6,7 @@ from llvmlite import (
     ir,
 )
 
-from imugi.ast import (
+from imugi.compiler.ast import (
     ASTNode,
     FunctionAST,
     PrototypeAST,

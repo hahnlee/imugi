@@ -11,7 +11,7 @@ from typing import (
     Union,
 )
 
-from imugi.ast import (
+from imugi.compiler.ast import (
     ASTNode,
     FunctionAST,
     PrototypeAST,

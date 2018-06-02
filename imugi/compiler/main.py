@@ -6,10 +6,10 @@ from sys import (
     platform,
 )
 
-from imugi.code_gen import (
+from imugi.compiler.code_gen import (
     CodeGen,
 )
-from imugi.parser import (
+from imugi.compiler.parser import (
     Parser,
 )
 

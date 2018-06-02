@@ -42,7 +42,7 @@ setup(
     packages=find_packages(exclude=['tests']),
     entry_points={
         'console_scripts': [
-            'imugi=imugi.main:main',
+            'imugi=imugi.compiler.main:main',
         ],
     },
     keywords=[
