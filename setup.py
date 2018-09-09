@@ -14,7 +14,7 @@ if sys.version_info < (3, 6):
     sys.exit('imugi only supports Python 3.6 or later')
 
 VERSION = imugi.__version__
-DOWNLOAD_URL = f'https://github.com/sn0wle0pard/imugi/archive/{VERSION}.tar.gz'
+DOWNLOAD_URL = f'https://github.com/hahnlee/imugi/archive/{VERSION}.tar.gz'
 
 project_dir: str = path.abspath(path.join(path.dirname(__file__)))
 
@@ -29,7 +29,7 @@ setup(
     long_description_content_type='text/markdown',
     author='Han Lee',
     author_email='hanlee.dev@gmail.com',
-    url='https://github.com/sn0wle0pard/imugi',
+    url='https://github.com/hahnlee/imugi',
     install_requires=[
         'llvmlite>=0.23.0',
     ],
