@@ -1,5 +1,8 @@
 # Imugi
 The experimental python compiler written in python
+<p align="center">
+  <img src="https://hahnlee.github.io/assets/imugi.svg">
+</p>
 
 imugi compiles python to use the [Objective-C Runtime](https://developer.apple.com/documentation/objectivec/objective_c_runtime).
 
